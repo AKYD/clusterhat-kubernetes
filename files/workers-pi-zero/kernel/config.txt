@@ -1,0 +1,19 @@
+# For more options and information see
+# http://rpf.io/configtxt
+# Some settings may impact device functionality. See link above for details
+
+kernel=kernel-4.9.80+.img
+
+dtparam=i2c_arm=on
+dtparam=audio=on
+enable_uart=1
+dtoverlay=dwc2
+
+[pi0]
+initramfs initramfs-4.9.80+.img
+[pi1]
+initramfs initramfs.img
+[pi3]
+initramfs initramfs7.img
+[all]
+
